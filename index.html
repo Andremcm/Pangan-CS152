@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Andre Pangan — Portfolio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<button id="mobile-nav-toggle" aria-label="Toggle navigation">
+  <span></span><span></span><span></span>
+</button>
+
+<aside class="sidebar" id="sidebar">
+  <div class="sidebar-top">
+    <img src="Pangan.jpg" alt="Andre Pangan" id="profile-img">
+    <h1 id="name">Andre Pangan</h1>
+    <p class="eyebrow" id="course-year">CCIS — 2nd Year</p>
+  </div>
+
+  <nav class="side-nav">
+    <a href="#about" class="nav-link">
+      <span class="nav-index">01</span> About
+    </a>
+    <a href="#achievements" class="nav-link">
+      <span class="nav-index">02</span> Certifications
+    </a>
+    <a href="#final-project" class="nav-link">
+      <span class="nav-index">03</span> Final Project
+    </a>
+    <a href="#projects" class="nav-link">
+      <span class="nav-index">04</span> Other Projects
+    </a>
+  </nav>
+
+  <div class="sidebar-bottom">
+    <button id="theme-toggle" aria-label="Toggle dark mode">
+      <span class="dot"></span> Dark mode
+    </button>
+  </div>
+</aside>
+
+<main class="content">
+
+  <section id="about" class="panel">
+    <p class="eyebrow">01 — About</p>
+    <h2>About Me</h2>
+    <p>I love to play games, watch YouTube, spend time with family, eat, and sleep. I am curious to learn new things related to technology and coding. Hopefully I can understand everything and learn new techniques.</p>
+  </section>
+
+  <section id="achievements" class="panel">
+    <p class="eyebrow">02 — Certifications</p>
+    <h2>Achievements &amp; Certifications</h2>
+
+    <ul class="cert-list">
+      <li class="cert-card">
+        <div class="cert-info">
+          <span class="cert-name">CCIS InnoVision 2026 — Certificate of Participation</span>
+          <span class="cert-detail">College Research, Innovation, and Project Colloquium · June 20, 2026</span>
+        </div>
+        <a href="certificates/CCIS-InnoVision-2026.pdf" target="_blank" class="btn">View Certificate</a>
+      </li>
+
+      <li class="cert-card">
+        <div class="cert-info">
+          <span class="cert-name">Coursera — Introduction to User Experience Design</span>
+          <span class="cert-detail">Georgia Institute of Technology · May 18, 2026</span>
+        </div>
+        <div class="cert-actions">
+          <a href="certificates/Coursera-UX-Design.pdf" target="_blank" class="btn">View Certificate</a>
+          <a href="https://coursera.org/verify/5HJDORCX9GN5" target="_blank" class="btn btn-ghost">Verify</a>
+        </div>
+      </li>
+
+      <li class="cert-card">
+        <div class="cert-info">
+          <span class="cert-name">Coursera — Input and Interaction</span>
+          <span class="cert-detail">University of California San Diego · May 1, 2026</span>
+        </div>
+        <div class="cert-actions">
+          <a href="certificates/Coursera-Input-Interaction.pdf" target="_blank" class="btn">View Certificate</a>
+          <a href="https://coursera.org/verify/XH6TO2OUOQB0" target="_blank" class="btn btn-ghost">Verify</a>
+        </div>
+      </li>
+    </ul>
+  </section>
+
+  <section id="final-project" class="panel">
+    <p class="eyebrow">03 — Final Project</p>
+    <h2>GabAIRa Care</h2>
+    <p class="project-tagline">Gabay na may Pag-alaga, Kahit Saan, Kahit Kailan</p>
+
+    <p>GabAIRa Care is an AI-driven medication management app with IoT pillbox integration, built to help patients with chronic conditions — like hypertension and diabetes — stay on top of their medication, and keep their caregivers in the loop in real time.</p>
+
+    <p>The system uses an XGBoost machine learning model trained on 10,000 patient records to predict adherence risk and decide the best time to send a reminder: send now, delay, or snooze. It syncs with an ESP32-based smart pillbox over a REST API, so patients can confirm doses by pressing a physical button or tapping "Taken" in the app — either way, caregivers see it update live on their dashboard.</p>
+
+    <p>Built with React Native (Expo) and a Neon PostgreSQL cloud database. User Acceptance Testing with 9 respondents, including a professional pharmacist, achieved a 100% pass rate for Patient Role test cases and 99.1% for Caretaker Role, with an overall ISO/IEC 25010 quality rating of 4.09 ("Acceptable") — scoring highest in Usability at 4.80.</p>
+
+    <div class="stat-row">
+      <div class="stat"><span class="stat-num">100%</span><span class="stat-label">Risk model accuracy</span></div>
+      <div class="stat"><span class="stat-num">100%</span><span class="stat-label">Patient UAT pass rate</span></div>
+      <div class="stat"><span class="stat-num">4.80</span><span class="stat-label">Usability rating / 5</span></div>
+    </div>
+
+    <p class="project-team"><strong>Team —</strong> Raphael Miguel P. Dumdum, Jan Jeerzyll T. Hudes, Andre Jan M. Pangan</p>
+
+    <div class="project-links">
+      <a href="final-project/GabAIRa-Care-IMRAD-Paper.pdf" target="_blank" class="btn">Read Full Paper (IMRAD)</a>
+    </div>
+
+    <h3>Patient View</h3>
+    <div class="screenshot-row">
+      <div class="phone-frame"><img src="final-project/screenshots/patient/patient-1.jpg" alt="GabAIRa Care Patient view 1"></div>
+      <div class="phone-frame"><img src="final-project/screenshots/patient/patient-2.jpg" alt="GabAIRa Care Patient view 2"></div>
+      <div class="phone-frame"><img src="final-project/screenshots/patient/patient-3.jpg" alt="GabAIRa Care Patient view 3"></div>
+      <div class="phone-frame"><img src="final-project/screenshots/patient/patient-4.jpg" alt="GabAIRa Care Patient view 4"></div>
+      <div class="phone-frame"><img src="final-project/screenshots/patient/patient-5.jpg" alt="GabAIRa Care Patient view 5"></div>
+      <div class="phone-frame"><img src="final-project/screenshots/patient/patient-6.jpg" alt="GabAIRa Care Patient view 6"></div>
+    </div>
+
+    <h3>Family View</h3>
+    <div class="screenshot-row">
+      <div class="phone-frame"><img src="final-project/screenshots/family/family-1.jpg" alt="GabAIRa Care Family view 1"></div>
+      <div class="phone-frame"><img src="final-project/screenshots/family/family-2.jpg" alt="GabAIRa Care Family view 2"></div>
+      <div class="phone-frame"><img src="final-project/screenshots/family/family-3.jpg" alt="GabAIRa Care Family view 3"></div>
+      <div class="phone-frame"><img src="final-project/screenshots/family/family-4.jpg" alt="GabAIRa Care Family view 4"></div>
+      <div class="phone-frame"><img src="final-project/screenshots/family/family-5.jpg" alt="GabAIRa Care Family view 5"></div>
+      <div class="phone-frame"><img src="final-project/screenshots/family/family-6.jpg" alt="GabAIRa Care Family view 6"></div>
+    </div>
+
+    <h3>Caregiver View</h3>
+    <div class="screenshot-row">
+      <div class="phone-frame"><img src="final-project/screenshots/caregiver/caregiver-1.jpg" alt="GabAIRa Care Caregiver view 1"></div>
+      <div class="phone-frame"><img src="final-project/screenshots/caregiver/caregiver-2.jpg" alt="GabAIRa Care Caregiver view 2"></div>
+      <div class="phone-frame"><img src="final-project/screenshots/caregiver/caregiver-3.jpg" alt="GabAIRa Care Caregiver view 3"></div>
+      <div class="phone-frame"><img src="final-project/screenshots/caregiver/caregiver-4.jpg" alt="GabAIRa Care Caregiver view 4"></div>
+      <div class="phone-frame"><img src="final-project/screenshots/caregiver/caregiver-5.jpg" alt="GabAIRa Care Caregiver view 5"></div>
+      <div class="phone-frame"><img src="final-project/screenshots/caregiver/caregiver-6.jpg" alt="GabAIRa Care Caregiver view 6"></div>
+      <div class="phone-frame"><img src="final-project/screenshots/caregiver/caregiver-7.jpg" alt="GabAIRa Care Caregiver view 7"></div>
+    </div>
+
+    <h3>Live Reminder Notification</h3>
+    <div class="screenshot-row">
+      <div class="phone-frame"><img src="final-project/screenshots/notification-example.jpg" alt="GabAIRa Care medication reminder notification"></div>
+    </div>
+  </section>
+
+  <section id="projects" class="panel">
+    <p class="eyebrow">04 — Other Projects</p>
+    <h2>Other Projects</h2>
+
+    <ul class="project-list">
+      <li class="project-item">
+        <span class="project-name">Journal.ai</span>
+        <span class="project-role">Co-creator</span>
+      </li>
+      <li class="project-item">
+        <span class="project-name">GreenSense Landing Page</span>
+        <a href="F2/index.html" target="_blank" class="btn btn-ghost">View</a>
+      </li>
+      <li class="project-item">
+        <span class="project-name">Machine Problem</span>
+        <a href="Machine-Problem/index.html" target="_blank" class="btn btn-ghost">View</a>
+      </li>
+      <li class="project-item">
+        <span class="project-name">M1 Summative Exam — Part 3</span>
+        <a href="https://pangan-part3.vercel.app" target="_blank" class="btn btn-ghost">View</a>
+      </li>
+      <li class="project-item">
+        <span class="project-name">PillPall Project</span>
+        <a href="https://pillpall-project.vercel.app" target="_blank" class="btn btn-ghost">View</a>
+      </li>
+    </ul>
+  </section>
+
+  <footer class="site-footer">
+    <p>Andre Pangan · CCIS Portfolio</p>
+  </footer>
+
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
