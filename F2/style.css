@@ -1,0 +1,195 @@
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+}
+
+h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #2d5016;
+  margin-bottom: 40px;
+}
+
+/* Hero Section */
+.hero {
+  background: linear-gradient(rgba(45, 80, 22, 0.7), rgba(106, 168, 61, 0.7)), 
+              url('Farmers.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  color: white;
+  text-align: center;
+  padding: 100px 20px;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 1.3rem;
+  margin-bottom: 30px;
+}
+
+.cta {
+  padding: 15px 40px;
+  font-size: 1.1rem;
+  background-color: #ff6b35;
+  color: white;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.cta:hover {
+  background-color: #ff5722;
+  transform: translateY(-3px);
+}
+
+/* Features Section */
+.features {
+  padding: 80px 20px;
+  background: #f9f9f9;
+}
+
+.feature-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.card {
+  background: white;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card h3 {
+  color: #2d5016;
+  margin-bottom: 15px;
+  font-size: 1.2rem;
+}
+
+/* Visual Section */
+.visual {
+  background: linear-gradient(135deg, #6ba83d, #4a7c25);
+  color: white;
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.steps {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  margin-top: 40px;
+}
+
+.step {
+  background: rgba(255,255,255,0.1);
+  padding: 30px;
+  border-radius: 15px;
+  min-width: 150px;
+}
+
+.step span {
+  display: block;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #ff6b35;
+  margin-bottom: 10px;
+}
+
+/* Info Section */
+.info {
+  padding: 80px 20px;
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.info ul {
+  list-style: none;
+  margin-top: 30px;
+}
+
+.info li {
+  font-size: 1.1rem;
+  margin: 15px 0;
+  color: #555;
+}
+
+/* CTA Final */
+.cta-final {
+  background: linear-gradient(135deg, #2d5016, #4a7c25);
+  color: white;
+  text-align: center;
+  padding: 100px 20px;
+}
+
+.cta-final h2 {
+  color: white;
+  margin-bottom: 30px;
+}
+
+/* Footer */
+footer {
+  background: #1a1a1a;
+  color: #ccc;
+  text-align: center;
+  padding: 30px 20px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2rem;
+  }
+  
+  h2 {
+    font-size: 2rem;
+  }
+  
+  .feature-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .steps {
+    flex-direction: column;
+  }
+}
+
+.description-box {
+  background: #f8f9fa;
+  padding: 30px 40px;
+  border-radius: 20px;
+  border: 4px solid #e74c3c;
+  max-width: 700px;
+  margin: 0 auto 50px;
+}
+
+.description-box p {
+  text-align: justify;
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #555;
+}
